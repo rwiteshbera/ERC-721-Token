@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
 contract MyNFT is ERC721URIStorage, Ownable {
 
-    constructor() ERC721("WarrantyFlipkart", "Flip"){}
+    constructor() ERC721("CryptoDragon", "CRD"){}
 
     using Counters for Counters.Counter;
 

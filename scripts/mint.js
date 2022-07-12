@@ -10,7 +10,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 console.log(JSON.stringify(contract.abi));
 
-const contractAddress = "0x06b271556703569F8F7950F5feBF50bE1659f5B9";
+const contractAddress = "0x33d60AaECb881b52a20F9ed7dc996Dc01Db7e20b";
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
 
 // Create Transaction
@@ -53,5 +53,5 @@ async function mintNFT(tokenURI) {
 }
 
 mintNFT(
-  "https://gateway.pinata.cloud/ipfs/QmVKgt1UfhCWJZYBtjsCeAw4r9gddAtHwpbP7aXjZfNVTm"
+  "../nft-metadata.json"
 );
